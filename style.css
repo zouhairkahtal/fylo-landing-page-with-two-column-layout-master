@@ -1,0 +1,534 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+img {
+  width: 50px;
+}
+
+.box-1 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.box-1 .box-1-1 img {
+  width: 110px;
+}
+.box-1 .box-1-2 {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box-1 .box-1-2 a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+.box-2 {
+  height: 600px;
+  display: flex;
+  margin-top: 50px;
+}
+.box-2 .box-2-1 {
+  width: 50%;
+  height: 100%;
+  padding: 80px 0 0 50px;
+}
+.box-2 .box-2-1 h1 {
+  max-width: 600px;
+  min-width: 200px;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: hsl(243, 87%, 12%);
+}
+.box-2 .box-2-1 p {
+  max-width: 600px;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: hsl(243, 87%, 12%);
+}
+.box-2 .box-2-1 input {
+  width: 260px;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+.box-2 .box-2-1:has(input:invalid) input {
+  border: 1px solid red;
+}
+.check {
+  display: none;
+}
+.box-2 .box-2-1:has(input:invalid) .check {
+  color: red;
+  font-size: small;
+  display: block;
+}
+button {
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  cursor: pointer;
+}
+.box-2 .box-2-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box-2 .box-2-2 img {
+  width: 500px;
+  min-width: 400px;
+}
+
+.box-3 {
+  width: 100%;
+  overflow: hidden;
+  background: url(images/bg-curve-desktop.svg) top/cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.box-3 .box-3-1 {
+  width: 60%;
+  height: 100%;
+  padding: 80px 0 0 50px;
+}
+.box-3 .box-3-1 h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+  color: hsl(243, 87%, 12%);
+}
+.box-3 .box-3-1 p {
+  max-width: 600px;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+
+  color: hsl(243, 87%, 12%);
+}
+.box-3 .box-3-1 p span {
+  color: hsl(170, 45%, 43%);
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+.box-3 .box-3-1 p span img {
+  width: 25px;
+  margin-bottom: -8px;
+}
+
+.box-3 .box-3-1 .card {
+  width: 350px;
+  height: 250px;
+  padding: 20px 0 0 30px;
+  line-height: 25px;
+  margin: 30px 0 100px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px 1px hsl(0, 0%, 75%);
+}
+.box-3 .box-3-1 .card img {
+  width: 40px;
+  border-radius: 100%;
+}
+.box-3 .box-3-1 .card p {
+  font-size: 14px;
+  width: 310px;
+}
+.box-3 .box-3-1 .card h4 {
+  margin-bottom: -10px;
+}
+.box-3 .box-3-1 .card .card-div {
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box-3 .box-3-2 {
+  padding-top: 100px;
+}
+.box-3 .box-3-2 img {
+  width: 500px;
+  margin-right: 100px;
+}
+.box-4 {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(238, 22%, 44%);
+}
+.box-4 .box-4-1 {
+  width: 60%;
+  height: 250px;
+  padding: 80px 0 50px 60px;
+}
+.box-4 .box-4-1 h2 {
+  padding-bottom: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+.box-4 .box-4-1 p {
+  width: 480px;
+  line-height: 25px;
+  color: #fff;
+}
+.box-4 .box-4-2 {
+  height: 250px;
+  width: 40%;
+  padding: 90px 0 50px 0;
+}
+.box-4 .box-4-2 input {
+  width: 340px;
+  height: 35px;
+  border-radius: 4px;
+  padding-left: 10px;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+.box-4 .box-4-2:has(:invalid) input {
+  border: 1px solid red;
+}
+.check-2 {
+  display: none;
+}
+.box-4 .box-4-2:has(:invalid) .check-2 {
+  display: block;
+  font-size: small;
+  color: #fff;
+}
+.box-5 {
+  background-color: hsl(243, 87%, 12%);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box-5 .box-5-1 {
+  margin-bottom: 100px;
+}
+.box-5 .box-5-1 .logo {
+  width: 200px;
+  filter: brightness(0%) invert(1);
+  margin-bottom: 30px;
+}
+.box-5 .box-5-1 p {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.width {
+  width: 16px;
+  margin-right: 10px;
+}
+ul {
+  margin-bottom: -30px;
+  list-style: none;
+  height: 120px;
+}
+li {
+  margin-bottom: 8px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+.box-5-4 img {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+}
+@media (max-width: 950px) {
+  .box-2 {
+    height: 1000px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .box-2 .box-2-1 {
+    width: 80%;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .box-2 .box-2-1 h1 {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+  .box-2 .box-2-1 p {
+    padding-bottom: 30px;
+  }
+  .box-2 .box-2-1 div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box-2 .box-2-1 div input {
+    width: 80%;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 75%);
+  }
+  .check {
+    order: 2;
+    padding-top: 10px;
+  }
+  .box-2 .box-2-1 div:has(input:invalid) input {
+    border: 1px solid red;
+  }
+  button {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    order: 3;
+    border-radius: 4px;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+  }
+  .box-2 .box-2-2 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .box-2 .box-2-2 img {
+    width: 60%;
+  }
+
+  .box-3 {
+    width: 100%;
+    background: url(images/bg-curve-desktop.svg) top/cover no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-3 .box-3-1 {
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-3 .box-3-1 h1 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: hsl(243, 87%, 12%);
+  }
+  .box-3 .box-3-1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+  }
+  .box-3 .box-3-1 p span {
+    color: hsl(170, 45%, 43%);
+    text-align: center;
+    width: 230px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+  }
+  .box-3 .box-3-1 p span img {
+    width: 25px;
+    margin-bottom: -8px;
+  }
+
+  .box-3 .box-3-1 .card {
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    line-height: 25px;
+    margin: 30px 0 100px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px hsl(0, 0%, 75%);
+  }
+  .box-3 .box-3-1 .card img {
+    width: 40px;
+    border-radius: 100%;
+  }
+
+  .box-3 .box-3-1 .card p {
+    font-size: 14px;
+    width: 80%;
+  }
+  .box-3 .box-3-1 .card h4 {
+    margin-bottom: -5px;
+  }
+  .box-3 .box-3-1 .card .card-div {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .box-3 .box-3-2 {
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-3 .box-3-2 img {
+    width: 70%;
+    margin: 0;
+  }
+  .box-4 {
+    height: 450px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(238, 22%, 44%);
+  }
+  .box-4 .box-4-1 {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+  }
+  .box-4 .box-4-1 h2 {
+    padding-bottom: 25px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .box-4 .box-4-1 p {
+    width: 80%;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+  }
+  .box-4 .box-4-2 {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  .box-4 .box-4-2 input {
+    width: 60%;
+    height: 50px;
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hsl(0, 0%, 75%);
+  }
+  .box-4 .box-4-2 button {
+    width: 60%;
+    font-size: 15px;
+  }
+  .box-4 .box-4-2:has(:invalid) input {
+    border: 1px solid red;
+  }
+}
+@media (max-width: 466px) {
+  .box-1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .box-1 .box-1-1 img {
+    width: 90px;
+    margin-left: -30px;
+    margin-right: 40px;
+  }
+  .box-1 .box-1-2 {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box-1 .box-1-2 a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+  }
+
+  .box-5 {
+    background-color: hsl(243, 87%, 12%);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0 50px 40px;
+  }
+  .box-5 .box-5-1 {
+    margin-bottom: 30px;
+  }
+  .box-5 .box-5-1 .logo {
+    width: 200px;
+    filter: brightness(0%) invert(1);
+    margin-bottom: 30px;
+  }
+  .box-5 .box-5-1 p {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .width {
+    width: 16px;
+    margin-right: 10px;
+  }
+  ul {
+    margin-bottom: 30px;
+    list-style: none;
+    height: 120px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .box-5-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-5-4 div {
+    margin-right: 40px;
+  }
+}
